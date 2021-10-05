@@ -9,8 +9,8 @@
 1. The user sends the text message to a number procurred from Telnyx
 1. Telnyx receives the message and hands it to ngrok webhook
 1. Ngrok webhook hands the data to flask aapplication
-1. Flask application reads  the messages, evaluate it and responds to users number
-1. Telnyx number sends response to users number as text message
+1. Flask application reads the message, evaluates it and responds to users number
+1. Telnyx number sends response to users number as text message from flask application
 
 ## Prerequisite
 
