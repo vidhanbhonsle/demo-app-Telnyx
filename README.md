@@ -99,7 +99,7 @@ A tunneling tool is required to provide internet access to Python Flask applicat
     ```
     <img src='./img/inbound_webhook.png' width="800"/>
 
-    > **Always keep the ngrok process running, do not stop it!**, also make sure you are not restarting the ngrok because it will lead to a changed URL. Which then will require you to repeat the above steps each time
+    > **Always keep the ngrok process running, do not stop it or restart it!** because it will lead to a changed URL, which then will require you to repeat the above steps each time
     
 </p></details>
 
