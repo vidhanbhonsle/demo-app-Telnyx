@@ -1,2 +1,2 @@
-# demo app chatbot
+# SMS Auto-responder App
  
