@@ -101,21 +101,6 @@ ___
     ```
     <img src='./img/inbound_webhook.png' width="800"/>
     
-    <details>
-    <summary>Click if the Telnyx number is an international number for User</summary>
-    <br>    
-    
-    > If you want to send the message to a Telnyx number which is not in the country where you are, you will need to click on the 'Routing' option.
-     <img src='./img/routing_click_red.png' width="800"/>
-    
-    > Once you click on 'Routing' a pop up will open. Select traffic type as "P2P" to allow International Inbound and Outbound SMS deliverability. And do not forget to save the changes!  
-
-     <img src='./img/routing_selected.png' width="800"/> 
-    </details>
-    
- 5. Acquire Telnyx API key
-    > Go to the [API Keys](https://portal.telnyx.com/#/app/api-keys) management screen and copy the API Key for a future step! If an API Key is not there, then create one!
-
 </p></details>
 
 ___
