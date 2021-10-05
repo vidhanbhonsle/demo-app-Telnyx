@@ -4,7 +4,7 @@
  ## Architecture
  The Python flask application responds to the food choices of a user 
 
- <img src='./img/architecture.png' width="600"/>
+ <img src='./img/architecture.png' width="1000"/>
  
 
 
