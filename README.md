@@ -28,7 +28,6 @@
  - Obtain a number with SMS capabilities for auto-responder app
  - Configure the number for messaging 
 
- Steps to follow (click to expand)
  <details>
 <summary><strong>Steps to follow</strong> (click to expand)</summary><p>
 
