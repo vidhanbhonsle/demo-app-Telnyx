@@ -75,7 +75,7 @@ A tunneling tool is required to provide internet access to Python Flask applicat
     
     > In the `Step 3`, you need to change the command to
      ``` shell
-    ./ngrok http 5000
+    ngrok http 5000
     ```
     > After running the above command, you would see something similar to following
     
