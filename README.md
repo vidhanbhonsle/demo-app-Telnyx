@@ -135,6 +135,10 @@ ___
     if __name__ =="__main__":
         app.run(port=5000)
     ```
-    
+    > Run the code with following command
+      ``` shell
+    python demo.py
+    ```
+    > You will get something like this
     
 </p></details>
