@@ -146,6 +146,10 @@ ___
     <img src='./img/flask_server.png' width="800"/>
 
     > You must notice few intresting things in the code, we have defined the path as `/webhooks` and specified that the path will respond to the HTTP `POST` method. This route will accept webhooks from Telnyx when your Telnyx number receives an SMS. 
-    
-    > We have a `payload` object reading the data coming in from the webhooks. 
+
+    > We have a `payload` object reading the data coming in from the webhooks.
+
+    > `You can test the code by sending an SMS from your mobile device to Telnyx number. You get response on your terminal or shell or command prompt.`
+
+3. 
 </p></details>
