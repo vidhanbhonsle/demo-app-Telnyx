@@ -210,9 +210,8 @@ Flask, a micro web framework written in Python, is one of the easiest web framew
     ```
     > If everything is working well, you should see following response:
      <img src='./img/phone image.jpg' width="800"/>
-
-</p></details>
-
 ___
 
 **Congratulations! You have created your own SMS Auto Responder App**
+</p></details>
+
