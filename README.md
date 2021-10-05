@@ -43,8 +43,6 @@
  5. Acquire Telnyx API key
     > Go to the [API Keys](https://portal.telnyx.com/#/app/api-keys) management screen and copy the API Key for a future step! If an API Key is not there, then create one!
 
- You have created your number, associated with a messaging profile, and obtained your API Key. You are ready to move on to the next major step!
-
 </p></details>
 
 ___
