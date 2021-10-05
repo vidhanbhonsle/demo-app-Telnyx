@@ -186,4 +186,18 @@ ___
         text = reply,
         )
     ``` 
+    > The values of `incomingText` and `incomingNumber` is extracted from the response received as payload. And it is passed to the create message with the reply. It is part of the Telnyx Python library which has made sending messages easy.
+
+    > In the above code, if you replace `calculateReply(incomingText)` with your own text string(say 'Hi from Flask app!'), it will work perfectly. But we need to built an application that responds after meeting certain criteria. You need to include following code
+    ``` python
+    def calculateReply(incomingText):
+        if(incomingText.lower() == 'ice cream'):
+            reply = "I prefer gelato"
+        elif(incomingText.lower() == 'pizza'):
+            reply = "Chicago pizza is the best"
+        else:
+            reply = "Please send either the word 'pizza' or 'ice cream' for a different response"
+        return reply 
+    ```
+    >  The `calculateReply` method takes `incomingText` as an argument and compares it with `ice cream` and `pizza`. On the basis of whether it matches or not, application sends the pre-determined response to the user.
 </p></details>
