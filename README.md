@@ -40,8 +40,10 @@
  4. Configure the number for messaging
     > Go to the [numbers](https://portal.telnyx.com/#/app/numbers/my-numbers) page, look for the number you created and set the number's `Messaging Profile` to the profile you created in the previous step. 
 
-    > If you want to send the message to a Telnyx number which is not in the country where you are, you will need to click on the 'Routing' option and select traffic type as "P2P" to allow International Inbound and Outbound SMS deliverability.
-     <img src='./img/routing_click_red.png' width="600"/> 
+    > If you want to send the message to a Telnyx number which is not in the country where you are, you will need to click on the 'Routing' option and select traffic type as "P2P" to allow International Inbound and Outbound SMS deliverability. And do not forget to save the changes
+     <img src='./img/routing_click_red.png' width="800"/>
+    > Once you click on 'Routing' a pop up will open  
+     <img src='./img/routing_selected.png' width="800"/> 
 
  5. Acquire Telnyx API key
     > Go to the [API Keys](https://portal.telnyx.com/#/app/api-keys) management screen and copy the API Key for a future step! If an API Key is not there, then create one!
