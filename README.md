@@ -43,6 +43,7 @@
     <details>
     <summary>If the Telnyx number is an international number for User</summary>
     <br>    
+    
     > If you want to send the message to a Telnyx number which is not in the country where you are, you will need to click on the 'Routing' option.
      <img src='./img/routing_click_red.png' width="800"/>
     
