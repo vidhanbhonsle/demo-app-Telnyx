@@ -81,14 +81,11 @@ A tunneling tool is required to provide internet access to Python Flask applicat
     
     <img src='./img/ngrok_tunnel.png' width="800"/> 
 
-    > Copy the highlighted 'Forwarding' address. we will need it in next step.
+    > Copy the highlighted 'Forwarding' address. we will need it in next step. 
 
     ``` shell
     http://0ab4-2405-201-300a-ecf1-201a-6ad8-c0d4-eddd.ngrok.io
     ```
-
-    > **Always keep the ngrok process running, do not stop it!**
-
  3. Edit Telnyx messaging profile to add webhook
     
     > Go to [messaging profile](https://portal.telnyx.com/#/app/messaging) and click on the message profile you created earlier.
@@ -101,6 +98,8 @@ A tunneling tool is required to provide internet access to Python Flask applicat
     http://0ab4-2405-201-300a-ecf1-201a-6ad8-c0d4-eddd.ngrok.io/webhooks
     ```
     <img src='./img/inbound_webhook.png' width="800"/>
+
+    > **Always keep the ngrok process running, do not stop it!**, also make sure you are not restarting the ngrok because it will lead to a changed URL. Which then will require you to repeat the above steps each time
     
 </p></details>
 
