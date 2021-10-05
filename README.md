@@ -120,7 +120,6 @@ ___
       ``` shell
     pip install --upgrade telnyx
     ```
-    > Telnyx API Key acquired in previous steps will be used along with the procurred Telnyx number. Copy the number from [Numbers] (https://portal.telnyx.com/#/app/numbers/my-numbers) screen.
 
  2. Receiving messages in Flask app
     > You need to create a Python file(I have named mine as demo.py) and write Flask code template in it.
@@ -149,9 +148,20 @@ ___
 
     > We have a `payload` object reading the data coming in from the webhooks.
 
-    > You can test the code by sending an SMS from your mobile device to Telnyx number. You will receive detailed response on your terminal or shell or command prompt.
+    > You can test the code by sending an SMS from your mobile device to Telnyx number. WHen you send a message (say 'Hello'),you will receive detailed response on your terminal or shell or command prompt.
     <img src='./img/first_response.png' width="800"/>
 
-3. Evaluating the message and sending the reponse
-    > 
+3. Sending the response to user
+    > You need to import Telnyx package to send the SMS
+      ``` python
+    import telnyx
+    ```
+
+    > Telnyx API Key acquired in previous steps will be used along with the procurred Telnyx number. If you have not, copy the number from [Numbers] (https://portal.telnyx.com/#/app/numbers/my-numbers) screen and provide the values in python code by replacing `YOUR_API_KEY` and `YOUR_TELNYX_NUMBER`
+
+      ``` python
+    telnyx.api_key = "YOUR_API_KEY" 
+    telnyx_number = 'YOUR_TELNYX_NUMBER'
+    ```
+
 </p></details>

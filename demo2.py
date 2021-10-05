@@ -1,4 +1,8 @@
 from flask import Flask, request
+import telnyx
+
+telnyx.api_key = "KEY017C41A1A876EAA1AE0FD375C7A48369_b1u44bgX3Cix5IdDWHAcKE" 
+telnyx_number = '+18727580002'
 
 app = Flask(__name__)
 
