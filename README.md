@@ -138,7 +138,8 @@ ___
     > Run the code with following command
       ``` shell
     python demo.py
-    ```
+    ```        
     > You will get something like this
-    
+    <img src='./img/flask_server.png' width="800"/>
+
 </p></details>
