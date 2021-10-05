@@ -14,9 +14,9 @@
 
 ## Prerequisite
 
- * **Python installed** (https://www.python.org/downloads/) 
- * **Telnyx Developer Account** (https://developers.telnyx.com/)
- * **Ngrok** (https://dashboard.ngrok.com/signup)
- * **Code IDE or text Editor**
- * **terminal or shell or command prompt**
+ * Python installed (https://www.python.org/downloads/) 
+ * Telnyx Developer Account (https://developers.telnyx.com/)
+ * Ngrok (https://dashboard.ngrok.com/signup)
+ * Code IDE or text Editor
+ * terminal or shell or command prompt
 
