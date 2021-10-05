@@ -164,4 +164,26 @@ ___
     telnyx_number = 'YOUR_TELNYX_NUMBER'
     ```
 
+    > You need to edit the `Webhooks` method to read the necessary part of the response and also restrict it to only respond to inbound messages
+      ``` python
+    def webhooks():
+    payload = request.json['data']['payload']
+    if payload['direction'] == 'inbound':
+        takeAction(payload)
+    return 'success', 200
+    ```
+    > In the above code, you will notice that a new method is defined `takeAction` that takes `payload` as a parameter. This method is where Flask app is responding to the incoming messages.
+      ``` python
+    def takeAction(payload):
+        incomingText    = payload['text']
+        incomingNumber  = payload['from']['phone_number']
+    
+        reply = calculateReply(incomingText)
+    
+        telnyx.Message.create(
+        from_ = telnyx_number,
+        to = incomingNumber,
+        text = reply,
+        )
+    ``` 
 </p></details>
