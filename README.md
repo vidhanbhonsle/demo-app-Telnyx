@@ -11,7 +11,6 @@ Flak application reads the message and responds back a predefined message to the
 
 ## Prerequisite
 
-It is recommended you have experience in the following areas to continue: 
  * **Python installed** (https://www.python.org/downloads/) 
  * **Telnyx Developer Account** (https://developers.telnyx.com/)
  * **Ngrok** (https://dashboard.ngrok.com/signup)
