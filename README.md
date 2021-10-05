@@ -122,7 +122,7 @@ ___
     ```
     > Telnyx API Key acquired in previous steps will be used along with the procurred Telnyx number. Copy the number from [Numbers] (https://portal.telnyx.com/#/app/numbers/my-numbers) screen.
 
- 2. Create a Python file and run a Flask application
+ 2. Receiving messages in Flask app
     > You need to create a Python file(I have named mine as demo.py) and write Flask code template in it.
       ``` python
     from flask import Flask, request
@@ -151,5 +151,7 @@ ___
 
     > `You can test the code by sending an SMS from your mobile device to Telnyx number. You will receive detailed response on your terminal or shell or command prompt.`
     <img src='./img/first_response.png' width="800"/>
-3. 
+
+3. Evaluating the message and sending the reponse
+    > 
 </p></details>
