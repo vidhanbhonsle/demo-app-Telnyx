@@ -126,14 +126,17 @@ ___
     > You need to create a Python file(I have named mine as demo.py) and write Flask code template in it.
       ``` python
     from flask import Flask, request
-
-    app = Flask(__name__)
     
+    app = Flask(__name__)
+
     @app.route('/webhooks', methods=['POST'])
     def webhooks():    
+        payload = request.json
+        print(payload)
+        return 'success', 200
 
     if __name__ =="__main__":
-        app.run(port=5000)
+    app.run(port=5000)
     ```
     > Run the code with following command
       ``` shell
@@ -143,4 +146,5 @@ ___
     <img src='./img/flask_server.png' width="800"/>
 
     > You must notice few intresting things in the code, we have defined the path as `/webhooks` and specified that the path will respond to the HTTP `POST` method. This route will accept webhooks from Telnyx when your Telnyx number receives an SMS. 
+    > We have a `payload` object reading the data coming in from the webhooks. 
 </p></details>
