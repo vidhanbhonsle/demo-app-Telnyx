@@ -23,32 +23,32 @@
 
  ### Step 1: Telnyx Setup
  
- You need to do following: 
- - Sign up for Telnyx account 
- - Obtain a number with SMS capabilities for auto-responder app
- - Configure the number for messaging 
- - Acquire API key
-
  <details>
 <summary><strong>Steps to follow</strong> (click to expand)</summary><p>
+ 1. Sign up for Telnyx account
+    > Set up a developer account with Telnyx from https://telnyx.com/sign-up.
 
-1. Set up a developer account with Telnyx from https://telnyx.com/sign-up.
-
-2. After creating an account and signing in, you need to [acquire a number](https://portal.telnyx.com/#/app/numbers/search-numbers) for the application. Search for a number by setting 'Region' or 'Area Code' of your preference. 
+ 2. Obtain a number with SMS capabilities for auto-responder app
+    > After creating an account and signing in, you need to [acquire a number](https://portal.telnyx.com/#/app/numbers/search-numbers) for the application. Search for a number by setting 'Region' or 'Area Code' of your preference. 
     
     > Make sure that the number supports SMS feature(Very Important!) as it will be used by our application.
+ 
+ 3. Create a messaging profile
+    > Next create a [messaging profile](https://portal.telnyx.com/#/app/messaging) by clicking on "Ass new profile" and provide a suitable profile name to it(you do not need to provide any other detail for now).
 
-3. Next create a [messaging profile](https://portal.telnyx.com/#/app/messaging) by clicking on "Ass new profile" and provide a suitable profile name to it(you do not need to provide any other detail for now).
+ 4. Configure the number for messaging
+    > Go to the [numbers](https://portal.telnyx.com/#/app/numbers/my-numbers) page, look for the number you created and set the number's `Messaging Profile` to the profile you created in the previous step. 
 
-4. Go to the [numbers](https://portal.telnyx.com/#/app/numbers/my-numbers) page, look for the number you created and set the number's `Messaging Profile` to the profile you created in the previous step. 
+ 5. Acquire Telnyx API key
+    > Go to the [API Keys](https://portal.telnyx.com/#/app/api-keys) management screen and copy the API Key for a future step! If an API Key is not there, then create one!
 
-5. Go to the [API Keys](https://portal.telnyx.com/#/app/api-keys) management screen and copy the API Key for a future step! If an API Key is not there, then create one!
-
-    > You have created your number, associated with a messaging profile, and obtained your API Key. You are ready to move on to the next major step!
+ You have created your number, associated with a messaging profile, and obtained your API Key. You are ready to move on to the next major step!
 
 </p></details>
 
 ___
 
 ### Step 2: Install and configure ngrok
+
+
 
