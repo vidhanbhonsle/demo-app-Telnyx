@@ -41,7 +41,7 @@
     > Go to the [numbers](https://portal.telnyx.com/#/app/numbers/my-numbers) page, look for the number you created and set the number's `Messaging Profile` to the profile you created in the previous step. 
     
     <details>
-    <summary>If the Telnyx number is an international number for User</summary>
+    <summary>Click if the Telnyx number is an international number for User</summary>
     <br>    
     
     > If you want to send the message to a Telnyx number which is not in the country where you are, you will need to click on the 'Routing' option.
