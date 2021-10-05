@@ -150,6 +150,6 @@ ___
     > We have a `payload` object reading the data coming in from the webhooks.
 
     > `You can test the code by sending an SMS from your mobile device to Telnyx number. You will receive detailed response on your terminal or shell or command prompt.`
-
+    <img src='./img/first_response.png' width="800"/>
 3. 
 </p></details>
