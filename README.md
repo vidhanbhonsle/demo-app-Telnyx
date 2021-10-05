@@ -5,11 +5,11 @@
  
  <img src='./img/architecture.png' width="1000"/>
  
-1. User sends the text message to a number procurred from Telnyx
+1. User sends an SMS from phone to a number procurred from Telnyx
 1. Telnyx receives the message and hands it to ngrok webhook
 1. Ngrok receives it and hands the data to flask aapplication
-1. Flask application reads the message, evaluates it and responds to users number
-1. Telnyx number sends response to users number as text message from flask application
+1. Flask application reads the message, evaluates it and responds to user's number
+1. Telnyx number sends response to user's number as a text message from flask application
 
 ## Prerequisite
 
