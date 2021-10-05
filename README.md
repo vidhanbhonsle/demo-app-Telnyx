@@ -23,4 +23,8 @@
  ## Steps
 
  ### Step 1: Telnyx Setup
-
+ 
+ You need to do following: 
+ 1. Sign up for Telnyx account 
+ 1. Obtain a number to use for SMS auto-responder app
+ 1. Configure the number for messaging 
