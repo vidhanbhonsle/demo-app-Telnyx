@@ -203,12 +203,11 @@ ___
 
 4. Testing the complete application
     > You can test it with your own mobile device, all you need to do is text your Telnyx number one of the following values:
-       ``` shell
+    ``` shell
     pizza
     ice cream
     burger
     ```
+    > If everything is working well, you should see following response:
 
-    If everything is working well, you should see following response:
-    
 </p></details>
