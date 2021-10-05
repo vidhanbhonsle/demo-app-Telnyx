@@ -27,19 +27,20 @@
  - Sign up for Telnyx account 
  - Obtain a number with SMS capabilities for auto-responder app
  - Configure the number for messaging 
+ - Acquire API key
 
  <details>
 <summary><strong>Steps to follow</strong> (click to expand)</summary><p>
 
 1. Set up a developer account with Telnyx from https://telnyx.com/sign-up.
 
-2. After creating an account and signing in, you need to [acquire a number](https://portal.telnyx.com/#/app/numbers/search-numbers) for the application. Search for the suitable 'Region' or 'Area Code'. Also make sure that the number supports SMS feature(Very Important!) as it will be used by our application.
+2. After creating an account and signing in, you need to [acquire a number](https://portal.telnyx.com/#/app/numbers/search-numbers) for the application. Search for a number by setting 'Region' or 'Area Code' of your preference. 
+    
+    > Make sure that the number supports SMS feature(Very Important!) as it will be used by our application.
 
-3. Next create a [messaging profile](https://portal.telnyx.com/#/app/messaging) and provide a suitable name to it(you do not need to provide any further detail for now).
+3. Next create a [messaging profile](https://portal.telnyx.com/#/app/messaging) by clicking on "Ass new profile" and provide a suitable profile name to it(you do not need to provide any other detail for now).
 
-4. Go to the [numbers](https://portal.telnyx.com/#/app/numbers/my-numbers) management screen and find the number you created previously. Set the number's `Messaging Profile` to the profile you created in the previous step. 
-
-    > You should be able to test the new number from within the Telnyx platform. Go to Step 3 at the [Messaging Learn & Build](https://portal.telnyx.com/#/app/messaging/learn-and-build) page.
+4. Go to the [numbers](https://portal.telnyx.com/#/app/numbers/my-numbers) page, look for the number you created and set the number's `Messaging Profile` to the profile you created in the previous step. 
 
 5. Go to the [API Keys](https://portal.telnyx.com/#/app/api-keys) management screen and copy the API Key for a future step! If an API Key is not there, then create one!
 
