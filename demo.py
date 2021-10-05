@@ -26,9 +26,9 @@ def takeAction(payload):
     )
 
 def calculateReply(incomingText):
-    if(incomingText == 'Ice cream'):
+    if(incomingText.lower() == 'ice cream'):
         reply = "I prefer gelato"
-    elif(incomingText == "pizza"):
+    elif(incomingText.lower() == 'pizza'):
         reply = "Chicago pizza is the best"
     else:
         reply = "Please send either the word 'pizza' or 'ice cream' for a different response"
