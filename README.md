@@ -116,7 +116,7 @@ Flask, a micro web framework written in Python, is one of the easiest web framew
     pip install Flask
     ```
 
-    > Install Telnyx Python library for sending the message to users from the Flask application using Telnyx API. 
+    > Install [Telnyx Python library](https://github.com/team-telnyx/telnyx-python) for sending the message to users from the Flask application using Telnyx API. 
       ``` shell
     pip install --upgrade telnyx
     ```
