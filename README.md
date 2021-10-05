@@ -123,9 +123,7 @@ ___
     > Telnyx API Key acquired in previous steps will be used along with the procurred Telnyx number. Copy the number from [Numbers] (https://portal.telnyx.com/#/app/numbers/my-numbers) screen.
 
  2. Create a Python file and run a Flask application
-    > You need to create a Python file and name it(I have named mine as demo.py)
-
-    > Then, you need to write Flask code template and run it to see if it is working
+    > You need to create a Python file(I have named mine as demo.py) and write Flask code template in it.
       ``` python
     from flask import Flask, request
 
