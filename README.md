@@ -61,6 +61,52 @@ ___
 
 ### Step 2: Install and configure ngrok
 
+<details>
+<summary><strong>Steps to follow</strong> (click to expand)</summary><p>
+
+ 1. Sign up for ngrok account and download the setup file
+    > Go to https://dashboard.ngrok.com/signup and create an account.
+
+ 2. Obtain the ngrok setup file and follow the steps mentioned
+    > Download the ngrok setup file as per your OS from https://dashboard.ngrok.com/get-started/setup and follow the steps mentioned on the page.
+    
+    > You need to run the setup file (It has zero run-time dependencies!)
+    
+    > In the Step 3, you need to change the command to
+     ``` shell
+    ./ngrok http 5000
+    ```
+    > After running the above command, you would see something similar to following
+    <img src='./img/ngrok_tunnel.png' width="800"/> 
+
+    > Copy the highlighted 'Forwarding' address
+
+ 3. Create a messaging profile
+    > Next create a [messaging profile](https://portal.telnyx.com/#/app/messaging) by clicking on "Ass new profile" and provide a suitable profile name to it(you do not need to provide any other detail for now).
+
+ 4. Configure the number for messaging
+    > Go to the [numbers](https://portal.telnyx.com/#/app/numbers/my-numbers) page, look for the number you created and set the number's `Messaging Profile` to the profile you created in the previous step. 
+    
+    <details>
+    <summary>Click if the Telnyx number is an international number for User</summary>
+    <br>    
+    
+    > If you want to send the message to a Telnyx number which is not in the country where you are, you will need to click on the 'Routing' option.
+     <img src='./img/routing_click_red.png' width="800"/>
+    
+    > Once you click on 'Routing' a pop up will open. Select traffic type as "P2P" to allow International Inbound and Outbound SMS deliverability. And do not forget to save the changes!  
+
+     <img src='./img/routing_selected.png' width="800"/> 
+    </details>
+    
+ 5. Acquire Telnyx API key
+    > Go to the [API Keys](https://portal.telnyx.com/#/app/api-keys) management screen and copy the API Key for a future step! If an API Key is not there, then create one!
+
+</p></details>
+
+___
+
+
 
 
 
