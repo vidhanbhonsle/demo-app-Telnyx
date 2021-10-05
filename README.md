@@ -77,11 +77,11 @@ A tunneling tool is required to provide internet access to Python Flask applicat
      ``` shell
     ngrok http 5000
     ```
-    > After running the above command, you would see something similar to following
+    > After running the above command, you would see something similar to following:
     
     <img src='./img/ngrok_tunnel.png' width="800"/> 
 
-    > Copy the highlighted 'Forwarding' address
+    > Copy the highlighted 'Forwarding' address. we will need it in next step.
 
     ``` shell
     http://0ab4-2405-201-300a-ecf1-201a-6ad8-c0d4-eddd.ngrok.io
