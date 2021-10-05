@@ -12,7 +12,7 @@ Flak application reads the message and responds back a predefined message to the
 ## Prerequisite
 
 It is recommended you have experience in the following areas to continue: 
- * **Python**(https://www.python.org/downloads/) 
+ * **Python** (https://www.python.org/downloads/) 
  * **Code IDE**
  * **terminal or shell or command prompt**
 
