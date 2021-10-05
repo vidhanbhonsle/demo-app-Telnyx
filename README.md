@@ -111,40 +111,32 @@ ___
 <summary><strong>Steps to follow</strong> (click to expand)</summary><p>
 
  1. Setup and dependencies
-    > Go to https://dashboard.ngrok.com/signup and create an account.
-
- 2. Obtain the ngrok setup file and follow the steps mentioned
-    > Download the ngrok setup file as per your OS from https://dashboard.ngrok.com/get-started/setup and follow the steps mentioned on the page.
-    
-    > You need to run the setup file (It has zero run-time dependencies!)
-    
-    > In the Step 3, you need to change the command to
-     ``` shell
-    ./ngrok http 5000
-    ```
-    > After running the above command, you would see something similar to following
-    
-    <img src='./img/ngrok_tunnel.png' width="800"/> 
-
-    > Copy the highlighted 'Forwarding' address
-
+    > A [Flask] (https://flask.palletsprojects.com/en/2.0.x/) application is required to receive the message by accepting the webhook request. You can install Flask by running following command in shell or terminal or command prompt
     ``` shell
-    http://0ab4-2405-201-300a-ecf1-201a-6ad8-c0d4-eddd.ngrok.io
+    pip install Flask
     ```
 
-    > **Always keep the ngrok process running, do not stop it!**
+    > Install Telnyx Python library for sending the message to users from the Flask application using Telnyx API. 
+      ``` shell
+    pip install --upgrade telnyx
+    ```
+    > Telnyx API Key acquired in previous steps will be used along with the procurred Telnyx number. Copy the number from [Numbers] (https://portal.telnyx.com/#/app/numbers/my-numbers) screen.
 
- 3. Edit Telnyx messaging profile to add webhook
+ 2. Create a Python file and run a Flask application
+    > You need to create a Python file and name it(I have named mine as demo.py)
+
+    > Then, you need to write Flask code template and run it to see if it is working
+      ``` python
+    from flask import Flask, request
+
+    app = Flask(__name__)
     
-    > Go to [messaging profile](https://portal.telnyx.com/#/app/messaging) and click on the message profile you created earlier.
+    @app.route('/webhooks', methods=['POST'])
+    def webhooks():    
 
-    > It will open "Edit Messaging Profile" page, here under "Inbound Settings" you need to provide value to 'Send a webhook to this URL' 
-
-    > The value is Forwarding address we copied in the previous step. Append it with '/webhooks'. It will look like this -
-
-    ``` shell
-    http://0ab4-2405-201-300a-ecf1-201a-6ad8-c0d4-eddd.ngrok.io/webhooks
+    if __name__ =="__main__":
+        app.run(port=5000)
     ```
-    <img src='./img/inbound_webhook.png' width="800"/>
+    
     
 </p></details>
