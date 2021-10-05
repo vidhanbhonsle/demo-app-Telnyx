@@ -60,6 +60,7 @@
 ___
 
 ### Step 2: Install and configure ngrok
+A tunneling tool is required to provide internet access to Python Flask application. You need to sign-up for ngrok account, download the setup file and edit Telnyx messaging profile to add a webhook.
 
 <details>
 <summary><strong>Steps to follow</strong> (click to expand)</summary><p>
@@ -72,7 +73,7 @@ ___
     
     > You need to run the setup file (It has zero run-time dependencies!)
     
-    > In the Step 3, you need to change the command to
+    > In the `Step 3`, you need to change the command to
      ``` shell
     ./ngrok http 5000
     ```
