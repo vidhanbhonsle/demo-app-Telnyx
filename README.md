@@ -25,6 +25,7 @@
  
  <details>
 <summary><strong>Steps to follow</strong> (click to expand)</summary><p>
+
  1. Sign up for Telnyx account
     > Set up a developer account with Telnyx from https://telnyx.com/sign-up.
 
