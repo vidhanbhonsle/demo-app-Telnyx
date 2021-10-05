@@ -24,7 +24,30 @@
  ### Step 1: Telnyx Setup
  
  You need to do following: 
- 1. Sign up for Telnyx account 
- 1. Obtain a number with SMS capabilities for auto-responder app
- 1. Configure the number for messaging 
+ - Sign up for Telnyx account 
+ - Obtain a number with SMS capabilities for auto-responder app
+ - Configure the number for messaging 
+
+ Steps to follow (click to expand)
+ <details>
+<summary><strong>Steps to follow</strong> (click to expand)</summary><p>
+
+1. You will need to set up a developer account with Telnyx at https://telnyx.com/sign-up.
+
+2. Once you have your account created and you are signed in, you will need to [procure a number](https://portal.telnyx.com/#/app/numbers/buy-numbers) to use for your chatbot. Be sure to select a number that supports the SMS feature.
+
+    > The number you buy is your "chatbot" number - this will be needed in a future step.
+
+3. Now create a [messaging profile](https://portal.telnyx.com/#/app/messaging). For now, just create the profile and don't worry about filling in any data. Once you have named and saved your profile, you are ready for the next step.
+
+4. Go to the [numbers](https://portal.telnyx.com/#/app/numbers/my-numbers) management screen and find the number you created previously. Set the number's `Messaging Profile` to the profile you created in the previous step. 
+
+    > You should be able to test the new number from within the Telnyx platform. Go to Step 3 at the [Messaging Learn & Build](https://portal.telnyx.com/#/app/messaging/learn-and-build) page.
+
+5. Go to the [API Keys](https://portal.telnyx.com/#/app/api-keys) management screen and copy the API Key for a future step! If an API Key is not there, then create one!
+
+    > You have created your number, associated with a messaging profile, and obtained your API Key. You are ready to move on to the next major step!
+
+</p></details>
+
 
