@@ -5,7 +5,7 @@
  
  <img src='./img/architecture.png' width="1000"/>
  
-1. The user sends the text message to a number procurred from Telnyx
+1. User sends the text message to a number procurred from Telnyx
 1. Telnyx receives the message and hands it to ngrok webhook
 1. Ngrok receives it and hands the data to flask aapplication
 1. Flask application reads the message, evaluates it and responds to users number
@@ -111,7 +111,7 @@ ___
 <summary><strong>Steps to follow</strong> (click to expand)</summary><p>
 
  1. Setup and dependencies
-    > A [Flask] (https://flask.palletsprojects.com/en/2.0.x/) application is required to receive the message by accepting the webhook request. You can install Flask by running following command in shell or terminal or command prompt
+    > A [Flask](https://flask.palletsprojects.com/en/2.0.x/) application is required to receive the message by accepting the webhook request. You can install Flask by running following command in shell or terminal or command prompt
     ``` shell
     pip install Flask
     ```
@@ -157,7 +157,7 @@ ___
     import telnyx
     ```
 
-    > Telnyx API Key acquired in previous steps will be used along with the procurred Telnyx number. If you have not, copy the number from [Numbers] (https://portal.telnyx.com/#/app/numbers/my-numbers) screen and provide the values in python code by replacing `YOUR_API_KEY` and `YOUR_TELNYX_NUMBER`
+    > Telnyx API Key acquired in previous steps will be used along with the procurred Telnyx number. If you have not, copy the number from [Numbers](https://portal.telnyx.com/#/app/numbers/my-numbers) screen and provide the values in python code by replacing `YOUR_API_KEY` and `YOUR_TELNYX_NUMBER`
 
       ``` python
     telnyx.api_key = "YOUR_API_KEY" 
