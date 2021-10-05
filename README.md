@@ -7,7 +7,7 @@
  
 1. The user sends the text message to a number procurred from Telnyx
 1. Telnyx receives the message and hands it to ngrok webhook
-1. Ngrok webhook hands the data to flask aapplication
+1. Ngrok receives it and hands the data to flask aapplication
 1. Flask application reads the message, evaluates it and responds to users number
 1. Telnyx number sends response to users number as text message from flask application
 
@@ -105,7 +105,46 @@ ___
 
 ___
 
+### Step 3: Python setup and code
 
+<details>
+<summary><strong>Steps to follow</strong> (click to expand)</summary><p>
 
+ 1. Setup and dependencies
+    > Go to https://dashboard.ngrok.com/signup and create an account.
 
+ 2. Obtain the ngrok setup file and follow the steps mentioned
+    > Download the ngrok setup file as per your OS from https://dashboard.ngrok.com/get-started/setup and follow the steps mentioned on the page.
+    
+    > You need to run the setup file (It has zero run-time dependencies!)
+    
+    > In the Step 3, you need to change the command to
+     ``` shell
+    ./ngrok http 5000
+    ```
+    > After running the above command, you would see something similar to following
+    
+    <img src='./img/ngrok_tunnel.png' width="800"/> 
 
+    > Copy the highlighted 'Forwarding' address
+
+    ``` shell
+    http://0ab4-2405-201-300a-ecf1-201a-6ad8-c0d4-eddd.ngrok.io
+    ```
+
+    > **Always keep the ngrok process running, do not stop it!**
+
+ 3. Edit Telnyx messaging profile to add webhook
+    
+    > Go to [messaging profile](https://portal.telnyx.com/#/app/messaging) and click on the message profile you created earlier.
+
+    > It will open "Edit Messaging Profile" page, here under "Inbound Settings" you need to provide value to 'Send a webhook to this URL' 
+
+    > The value is Forwarding address we copied in the previous step. Append it with '/webhooks'. It will look like this -
+
+    ``` shell
+    http://0ab4-2405-201-300a-ecf1-201a-6ad8-c0d4-eddd.ngrok.io/webhooks
+    ```
+    <img src='./img/inbound_webhook.png' width="800"/>
+    
+</p></details>
