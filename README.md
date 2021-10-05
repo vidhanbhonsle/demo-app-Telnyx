@@ -139,7 +139,8 @@ ___
       ``` shell
     python demo.py
     ```        
-    > You will get something like this
+    > You will get something like this showing you Flask app is running on http://127.0.0.1:500/
     <img src='./img/flask_server.png' width="800"/>
 
+    > You must notice few intresting things in the code, we have defined the path as `/webhooks` and specified that the path will respond to the HTTP `POST` method. This route will accept webhooks from Telnyx when your Telnyx number receives an SMS. 
 </p></details>
