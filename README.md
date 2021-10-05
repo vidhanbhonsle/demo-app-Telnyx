@@ -20,3 +20,7 @@
  * Code IDE or text Editor
  * terminal or shell or command prompt
 
+ ## Steps
+
+ ### Step 1: Telnyx Setup
+
