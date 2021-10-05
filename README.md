@@ -31,13 +31,11 @@
  <details>
 <summary><strong>Steps to follow</strong> (click to expand)</summary><p>
 
-1. You will need to set up a developer account with Telnyx at https://telnyx.com/sign-up.
+1. Set up a developer account with Telnyx from https://telnyx.com/sign-up.
 
-2. Once you have your account created and you are signed in, you will need to [procure a number](https://portal.telnyx.com/#/app/numbers/buy-numbers) to use for your chatbot. Be sure to select a number that supports the SMS feature.
+2. After creating an account and signing in, you need to [acquire a number](https://portal.telnyx.com/#/app/numbers/search-numbers) for the application. Search for the suitable 'Region' or 'Area Code'. Also make sure that the number supports SMS feature(Very Important!) as it will be used by our application.
 
-    > The number you buy is your "chatbot" number - this will be needed in a future step.
-
-3. Now create a [messaging profile](https://portal.telnyx.com/#/app/messaging). For now, just create the profile and don't worry about filling in any data. Once you have named and saved your profile, you are ready for the next step.
+3. Next create a [messaging profile](https://portal.telnyx.com/#/app/messaging) and provide a suitable name to it(you do not need to provide any further detail for now).
 
 4. Go to the [numbers](https://portal.telnyx.com/#/app/numbers/my-numbers) management screen and find the number you created previously. Set the number's `Messaging Profile` to the profile you created in the previous step. 
 
