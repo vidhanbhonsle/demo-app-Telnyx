@@ -77,15 +77,29 @@ ___
     ./ngrok http 5000
     ```
     > After running the above command, you would see something similar to following
+    
     <img src='./img/ngrok_tunnel.png' width="800"/> 
 
     > Copy the highlighted 'Forwarding' address
 
- 3. Create a messaging profile
-    > Next create a [messaging profile](https://portal.telnyx.com/#/app/messaging) by clicking on "Ass new profile" and provide a suitable profile name to it(you do not need to provide any other detail for now).
+    ``` shell
+    http://0ab4-2405-201-300a-ecf1-201a-6ad8-c0d4-eddd.ngrok.io
+    ```
 
- 4. Configure the number for messaging
-    > Go to the [numbers](https://portal.telnyx.com/#/app/numbers/my-numbers) page, look for the number you created and set the number's `Messaging Profile` to the profile you created in the previous step. 
+    > **Always keep the ngrok process running, do not stop it!**
+
+ 3. Edit Telnyx messaging profile to add webhook
+    
+    > Go to [messaging profile](https://portal.telnyx.com/#/app/messaging) and click on the message profile you created earlier.
+
+    > It will open "Edit Messaging Profile" page, here under "Inbound Settings" you need to provide value to 'Send a webhook to this URL' 
+
+    > The value is Forwarding address we copied in the previous step. Append it with '/webhooks'. It will look like this -
+
+    ``` shell
+    http://0ab4-2405-201-300a-ecf1-201a-6ad8-c0d4-eddd.ngrok.io/webhooks
+    ```
+    <img src='./img/inbound_webhook.png' width="800"/>
     
     <details>
     <summary>Click if the Telnyx number is an international number for User</summary>
