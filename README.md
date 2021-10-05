@@ -199,5 +199,16 @@ ___
             reply = "Please send either the word 'pizza' or 'ice cream' for a different response"
         return reply 
     ```
-    >  The `calculateReply` method takes `incomingText` as an argument and compares it with `ice cream` and `pizza`. On the basis of whether it matches or not, application sends the pre-determined response to the user.
+    >  The `calculateReply` method takes `incomingText` as an argument and compares it with `ice cream` and `pizza` strings. On the basis of whether it matches or not, application sends a pre-determined response to the user.
+
+4. Testing the complete application
+    > You can test it with your own mobile device, all you need to do is text your Telnyx number one of the following values:
+       ``` shell
+    pizza
+    ice cream
+    burger
+    ```
+
+    If everything is working well, you should see following response:
+    
 </p></details>
