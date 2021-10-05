@@ -137,27 +137,27 @@ Flask, a micro web framework written in Python, is one of the easiest web framew
     if __name__ =="__main__":
     app.run(port=5000)
     ```
-    > Run the code with following command
+    > Run the code with following command:
       ``` shell
     python demo.py
     ```        
-    > You will get something like this
+    > You will get something like this:
     <img src='./img/flask_server.png' width="800"/>
 
     > You must notice few intresting things in the code, we have defined the path as `/webhooks` and specified that the path will respond to the HTTP `POST` method. This route will accept webhooks from Telnyx when your Telnyx number receives an SMS. 
 
     > We have a `payload` object reading the data coming in from the webhooks.
 
-    > You can test the code by sending an SMS from your mobile device to Telnyx number. WHen you send a message (say 'Hello'),you will receive detailed response on your terminal or shell or command prompt.
+    > You can test the code by sending an SMS from your mobile device to Telnyx number. When you send a message (say 'Hello'),you will receive detailed response on your terminal or shell or command prompt.
     <img src='./img/first_response.png' width="800"/>
 
-3. Sending the response to user
-    > You need to import Telnyx package to send the SMS
+3. Sending an SMS response to user
+    > You need to import Telnyx package to send the SMS to user
       ``` python
     import telnyx
     ```
 
-    > Telnyx API Key acquired in previous steps will be used along with the procurred Telnyx number. If you have not, copy the number from [Numbers](https://portal.telnyx.com/#/app/numbers/my-numbers) screen and provide the values in python code by replacing `YOUR_API_KEY` and `YOUR_TELNYX_NUMBER`
+    > Telnyx API Key acquired in previous steps will be used along with the procurred Telnyx number. If you have not, copy the number from [Numbers](https://portal.telnyx.com/#/app/numbers/my-numbers) screen and provide the values in python code by replacing `YOUR_API_KEY` with Telnyx API key and `YOUR_TELNYX_NUMBER` with procurred Telnyx number.
 
       ``` python
     telnyx.api_key = "YOUR_API_KEY" 
@@ -172,7 +172,7 @@ Flask, a micro web framework written in Python, is one of the easiest web framew
         takeAction(payload)
     return 'success', 200
     ```
-    > In the above code, you will notice that a new method is defined `takeAction` that takes `payload` as a parameter. This method is where Flask app is responding to the incoming messages.
+    > In the above code, you will notice that a new method is defined `takeAction` that takes `payload` as an argument. This method is where Flask app is responding to the incoming messages.
       ``` python
     def takeAction(payload):
         incomingText    = payload['text']
@@ -186,9 +186,9 @@ Flask, a micro web framework written in Python, is one of the easiest web framew
         text = reply,
         )
     ``` 
-    > The values of `incomingText` and `incomingNumber` is extracted from the response received as payload. And it is passed to the create message with the reply. It is part of the Telnyx Python library which has made sending messages easy.
+    > The values of `incomingText` and `incomingNumber`are extracted from the response received as payload. And it is passed to the `telnyx.Message.create` with the messsage(reply). `telnyx.Message.create` is a part of the Telnyx Python library which has made sending messages easy.
 
-    > In the above code, if you replace `calculateReply(incomingText)` with your own text string(say 'Hi from Flask app!'), it will work perfectly. But we need to built an application that responds after meeting certain criteria. You need to include following code
+    > In the above code, if you replace `calculateReply(incomingText)` with your own text string(say 'Hi from Flask app!'), it will work perfectly and will only send fixed message. But we need to built an application that responds after meeting certain criteria. You need to include following code:
     ``` python
     def calculateReply(incomingText):
         if(incomingText.lower() == 'ice cream'):
@@ -199,10 +199,10 @@ Flask, a micro web framework written in Python, is one of the easiest web framew
             reply = "Please send either the word 'pizza' or 'ice cream' for a different response"
         return reply 
     ```
-    >  The `calculateReply` method takes `incomingText` as an argument and compares it with `ice cream` and `pizza` strings. On the basis of whether it matches or not, application sends a pre-determined response to the user.
+    >  In the above code, `calculateReply` method takes `incomingText` as an argument and compares it with `ice cream` and `pizza` strings. On the basis of whether `incomingText` matches or not, application sends a pre-determined response to the user.
 
 4. Testing the complete application
-    > You can test it with your own mobile device, all you need to do is text your Telnyx number one of the following values:
+    > You can test it with your own mobile device, all you need to do is text one of the following values to your Telnyx number:
     ``` shell
     pizza
     ice cream
