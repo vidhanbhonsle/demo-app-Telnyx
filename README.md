@@ -99,14 +99,14 @@ A tunneling tool is required to provide internet access to Python Flask applicat
     ```
     <img src='./img/inbound_webhook.png' width="800"/>
 
-    > **Always keep the ngrok process running, do not stop it or restart it!** Because it will lead to a changed URL, which then will require you to repeat the above steps each time
+    > **Always keep the ngrok process running, do not stop it or restart it!** Because it will lead to a changed URL, which then will require you to repeat the above steps each time.
     
 </p></details>
 
 ___
 
 ### Step 3: Python setup and code
-
+Flask, a micro web framework written in Python, is one of the easiest web framework to work with. You need to create a Flask app, receive messages in application from user and send the response to user based on pre-defined conditions.
 <details>
 <summary><strong>Steps to follow</strong> (click to expand)</summary><p>
 
