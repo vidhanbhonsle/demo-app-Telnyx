@@ -6,5 +6,9 @@
 
  <img src='./img/architecture.png' width="1000"/>
  
+The user sends the text message to a Telnyx procurred number, which is then forwarded to Python flask application with the hep of ngrok webhook.
+Flak application reads the message and responds back a predefined message to the user using Telnyx procurred number and ngrok webhook.
+
+## Prerequisite
 
 
