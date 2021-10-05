@@ -43,7 +43,7 @@
     > If you want to send the message to a Telnyx number which is not in the country where you are, you will need to click on the 'Routing' option.
      <img src='./img/routing_click_red.png' width="800"/>
     
-    > Once you click on 'Routing' a pop up will open, select traffic type as "P2P" to allow International Inbound and Outbound SMS deliverability. And do not forget to save the changes  
+    > Once you click on 'Routing' a pop up will open. Select traffic type as "P2P" to allow International Inbound and Outbound SMS deliverability. And do not forget to save the changes!  
 
      <img src='./img/routing_selected.png' width="800"/> 
 
